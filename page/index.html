@@ -18,20 +18,27 @@
     <header class="header">
         <div class="container">
 
+
             <nav class="navbar">
                 <div class="top-logo">
                     <a href="#">
                         <img src="../img/logo-Mhost.png" alt="">
                     </a>
                 </div>
-            
+
+                <!-- menu link -->
                 <ul class="header-items">
-                    <li><a href="" class="header-link">Hospedagem</a></li>
-                    <li><a href="" class="header-link">Domínio</a></li>
-                    <li><a href="#plans" class="header-link">Preços</a></li>
-                    <li><a href="" class="header-link">Crie Seu Site</a></li>
-                    <li><a href="" class="login">Entrar</a></li>
+                    <li><a href="#" class="header-link">Hospedagem</a></li>
+                    <li><a href="#" class="header-link">Domínio</a></li>
+                    <li><a href="#plans" class="header-link">Planos</a></li>
+                    <li><a href="#" class="header-link">Crie Seu Site</a></li>
+                    <li><a href="#" class="login">Entrar</a></li>
                 </ul>
+
+                <!-- collapse button -->
+                <div class="btn-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </nav>
         </div>
     </header>
@@ -41,17 +48,21 @@
     <main>
 
         <!-- banner -->
-        <div class="banner">
+        <div class="banner-area">
             <div class="container">
-                <div class="banner-intro">
-                    <h1>Hospedagem Node.js</h1>
-                    <p>Configure sua hospedagem Node.js com poucos cliques através do seu painel de controle e tenha sua aplicação rodando em segundos.</p>
 
-                    <a href="#plans" class="btn-intro">Conheça os Planos</a>
-                </div>
 
-                <div class="banner-img">
-                    <img src="../img/intro.png">
+                <div class="banner-row">
+                    <div class="banner-intro">
+                        <h1>Hospedagem Node.js</h1>
+                        <p>Configure sua hospedagem Node.js com poucos cliques através do seu painel de controle e tenha sua aplicação rodando em segundos.</p>
+
+                        <a href="#plans" class="btn-intro">Conheça os Planos</a>
+                    </div>
+                    
+                    <div class="banner-img">
+                        <img src="../img/intro.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,9 +71,12 @@
         <!-- plans -->
         <section class="plans-area" id="plans">
             <div class="container">
+
+
                 <h2 class="section-title">Escolha seu Plano de Hospedagem</h2>
 
-                <div class="row-plans">
+
+                <div class="plans-row">
                     <div class="pricing-table">
                         <h3>Free</h3>
                         <h1><span>R$</span>00</h1>
@@ -113,16 +127,20 @@
         <!-- /plans -->
 
         <!-- space mhost -->
-        <section class="space-mhost">
+        <section class="space-mhost-area">
             <div class="container">
-                <div class="nodejs">
-                    <img src="../img/nodejs-logo.png">
-                </div>
 
-                <div class="space-mhost-content">
-                    <p>O Node.js permite aos desenvolvedores criarem aplicações com diversas conexões contínuas em tempo-real entre o navegador e o servidores.</p>
 
-                    <p>Leve e eficiente, o Node.js é ideal para aplicações que necessitam de escalabilidade e grande quantidade de troca de dados.</p>
+                <div class="space-mhost-row">
+                    <div class="nodejs-img">
+                        <img src="../img/nodejs-logo.png">
+                    </div>
+                    
+                    <div class="space-mhost-text">
+                        <p>O Node.js permite aos desenvolvedores criarem aplicações com diversas conexões contínuas em tempo-real entre o navegador e o servidores.</p>
+
+                        <p>Leve e eficiente, o Node.js é ideal para aplicações que necessitam de escalabilidade e grande quantidade de troca de dados.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -133,7 +151,7 @@
             <div class="container">
                 <h2 class="section-title">Vantagens da Hospedagem Node.js</h2>
 
-                <div class="features-content">
+                <div class="features-row">
                     <div class="feature-item">
                         <div class="feature-icon">
                             <div class="feature-icon-circle">
@@ -195,9 +213,9 @@
             <div class="container">
                 <h2 class="section-title">Suporte aos principais frameworks</h2>
 
-                <p>A hospedagem Node.js oferece suporte a diversos frameworks reconhecidos, que podem ser instalados, configurados e atualizados utilizando o <span class="green">NPM.</span></p>
+                <p>A hospedagem Node.js oferece suporte a diversos frameworks reconhecidos, que podem ser instalados, configurados e atualizados utilizando o <span class="red">NPM.</span></p>
 
-                <div class="support-content">
+                <div class="support-row">
                     <img src="../img/logo-socketio.png">
                     <img src="../img/logo-gulp.png">
                     <img src="../img/logo-grunt.png">
@@ -216,45 +234,47 @@
     <footer class="footer">
         <div class="container">
 
-            <div class="footer-list">
-                <h5>hospedagem</h5>
-                <ul>
-                    <li><a href="#">Loja Virtual</a></li>
-                    <li><a href="#">Hospedagem de Sites</a></li>
-                    <li><a href="#">Hospedagem NodeJS</a></li>
-                    <li><a href="#">Hospedagem Cloud</a></li>
-                    <li><a href="#">Revenda de Hospedagem</a></li>
-                </ul>
-            </div>
+            <div class="footer-row">
+                <div class="footer-list">
+                    <h5>hospedagem</h5>
+                    <ul>
+                        <li><a href="#">Loja Virtual</a></li>
+                        <li><a href="#">Hospedagem de Sites</a></li>
+                        <li><a href="#">Hospedagem NodeJS</a></li>
+                        <li><a href="#">Hospedagem Cloud</a></li>
+                        <li><a href="#">Revenda de Hospedagem</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-list">
-                <h5>domínios</h5>
-                <ul>
-                    <li><a href="#">Registro de Domínio</a></li>
-                    <li><a href="#">Transferência de Dominio</a></li>
-                    <li><a href="#">Comprar SSL</a></li>
-                    <li><a href="#">Registro de Domínio Grátis</a></li>
-                </ul>
-            </div>            
+                <div class="footer-list">
+                    <h5>domínios</h5>
+                    <ul>
+                        <li><a href="#">Registro de Domínio</a></li>
+                        <li><a href="#">Transferência de Dominio</a></li>
+                        <li><a href="#">Comprar SSL</a></li>
+                        <li><a href="#">Registro de Domínio Grátis</a></li>
+                    </ul>
+                </div>            
 
-            <div class="footer-list">
-                <h5>precisa de ajuda?</h5>
-                <ul>
-                    <li><a href="#">Atendimento via Chat</a></li>
-                    <li><a href="#">Central de Ajuda</a></li>
-                    <li><a href="#">Status dos Serviços</a></li>
-                    <li><a href="#">Canais de Atendimento</a></li>
-                    <li><a href="#">2ª via de boleto</a></li>
-                </ul>
-            </div>
+                <div class="footer-list">
+                    <h5>precisa de ajuda?</h5>
+                    <ul>
+                        <li><a href="#">Atendimento via Chat</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Status dos Serviços</a></li>
+                        <li><a href="#">Canais de Atendimento</a></li>
+                        <li><a href="#">2ª via de boleto</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-list">
-                <h5>receba nossas novidades</h5>
-                <p>Fique informado sobre lançamentos, noticias, dicas e ofertas especiais.</p>
+                <div class="footer-list">
+                    <h5>receba nossas novidades</h5>
+                    <p>Fique informado sobre lançamentos, noticias, dicas e ofertas especiais.</p>
 
-                <div class="news-letter">
-                    <input type="text" placeholder="Deixe seu Email">
-                    <button>Enviar</button>
+                    <div class="news-letter">
+                        <input type="text" placeholder="Deixe seu Email">
+                        <button>Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
