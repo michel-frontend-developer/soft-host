@@ -434,3 +434,19 @@ section{
         grid-template-columns: 1fr;
     }
 }
+
+/*  small device - mobile
+------------------------------------------*/
+@media screen and (max-width: 480px){
+    /*  banner
+    --------------------------------------*/
+    .banner-intro h1{
+        font-size: 2.5em;
+    }
+    
+    /*  feature
+    --------------------------------------*/
+    .feature-item{
+        padding: 30px 0;
+    }
+}
