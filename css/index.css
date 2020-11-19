@@ -9,9 +9,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-html{
-    scroll-behavior: smooth;
-}
 ul{
     list-style-type: none;
 }
@@ -116,8 +113,11 @@ section{
 .banner-row{
     transform: skew(0deg, 12deg);
     padding-top: 330px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
+}
+.banner-col50{
+    width: 50%;
 }
 .banner-intro{
     padding-top: 80px;
@@ -143,12 +143,14 @@ section{
 /*  plans
 ------------------------------------------*/
 .plans-row{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .pricing-table{
+    width: 310px;
     padding: 50px 20px;
+    margin: 30px 15px 0;
     border: 1px solid #ccc;
     transition: all .8s ease;
     text-align: center;
@@ -194,36 +196,40 @@ section{
     color: #fff;
 }
 
-/*  space mhost
+/*  space host
 ------------------------------------------*/
-.space-mhost-area{
+.space-host-area{
     background-color: #fff2ef;
     padding: 60px 0;
 }
-.space-mhost-row{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 50px;
+.space-host-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.space-mhost-text{
+.col50{
+    width: 48%;
+}
+.space-host-text{
     margin-top: 20px;
 }
-.space-mhost-area .nodejs-img img{
+.space-host-area .nodejs-img img{
     width: 100%;
 }
-.space-mhost-content p:first-child{
+.space-host-content p:first-child{
     margin-bottom: 10px;
 }
 
 /*  feature
 ------------------------------------------*/
 .features-row{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
 }
 .feature-item{
-    padding: 30px;
+    width: 50%;
     display: flex;
+    padding: 30px;
     transition: box-shadow 0.3s ease-in-out;
 }
 .feature-item:hover{
@@ -283,11 +289,15 @@ section{
     padding: 50px 0 20px;
 }
 .footer-row{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: 50px;
+}
+.footer-list{
+    width: 220px;
+    margin: 50px 15px 0;
 }
 .footer-list h5, .footer-list li a, .footer p{
     color: #cdcdcd;
@@ -307,6 +317,7 @@ section{
     margin-top: 20px;
 }
 .footer-list .news-letter input{
+    width: 100%;
     padding: 6px 12px;
     font-size: 0.875em;
     border: 1px solid #ccc;
@@ -373,32 +384,19 @@ section{
     /*  banner
     --------------------------------------*/
     .banner-row{
-        grid-template-columns: 1fr;
         padding-top: 280px;
     }
     .banner-img{
         display: none;
     }
-
-    /*  plans
-    --------------------------------------*/
-    .plans-row{
-        grid-template-columns: 1fr;
-        padding: 0 20%;
-        grid-row-gap: 50px;
+    .banner-col50{
+        width: 100%;
     }
 
     /*  features
     --------------------------------------*/
-    .features-row{
-        grid-template-columns: 1fr;
-    }
-
-    /*  footer
-    --------------------------------------*/
-    .footer-row{
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 80px;
+    .feature-item{
+        width: 100%;
     }
 }
 
@@ -411,27 +409,10 @@ section{
         padding: 0 5%;
     }
 
-    /*  space mhost
+    /*  space host
     --------------------------------------*/
-    .space-mhost-row{
-        grid-template-columns: 1fr;
-        grid-row-gap: 30px;
-    }
-}
-
-/*  small device - mobile
-------------------------------------------*/
-@media screen and (max-width: 600px){
-    /*  plans
-    --------------------------------------*/
-    .plans-row{
-        padding: 0 10%;
-    }
-
-    /*  footer
-    --------------------------------------*/
-    .footer-row{
-        grid-template-columns: 1fr;
+    .col50{
+        width: 100%;
     }
 }
 

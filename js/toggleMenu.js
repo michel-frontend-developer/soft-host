@@ -1,5 +1,3 @@
-'use strict';
-
 //  menu toggle
 const navbarToggle = document.querySelector('.btn-toggle');
 const navbarMenu = document.querySelector('.header-items');
