@@ -1,3 +1,10 @@
+const links = document.querySelectorAll('a');
+links.forEach(function(element){
+    element.addEventListener('click', function(e){
+        e.preventDefault();
+    });
+});
+
 //  menu toggle
 const navbarToggle = document.querySelector('.btn-toggle');
 const navbarMenu = document.querySelector('.header-items');
@@ -12,5 +19,5 @@ navbarLinks.forEach(function(element){
         if(navbarMenu.classList.contains('open')){
             navbarToggle.click();
         }
-    }, false);
+    });
 });
