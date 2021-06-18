@@ -112,7 +112,7 @@ section{
 }
 .banner-row{
     transform: skew(0deg, 12deg);
-    padding-top: 330px;
+    padding-top: 300px;
     display: flex;
     justify-content: space-between;
 }
@@ -369,6 +369,9 @@ section{
     .header-items li{
         margin-bottom: 20px;
     }
+    .header-items li:last-child{
+        margin-top: 20px;
+    }
     .open{
         top: 78px;
     }
@@ -387,7 +390,7 @@ section{
     /*  banner
     --------------------------------------*/
     .banner-row{
-        padding-top: 280px;
+        padding-top: 250px;
     }
     .banner-img{
         display: none;
